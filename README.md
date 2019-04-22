@@ -28,3 +28,30 @@ The response will include the following information from the request:
 - Parsed URL Query String Parameters
 - URL Path
 - Parsed HTTP Body (if JSON or url-encoded parameters)
+
+#### Sample Response
+
+```json
+{
+  "method": "POST",
+  "cookies": { "session-token": "20560280312699453" },
+  "headers": {
+    "host": "localhost:8080",
+    "connection": "keep-alive",
+    "content-length": "24",
+    "pragma": "no-cache",
+    "cache-control": "no-cache",
+    "origin": "http://localhost:8080",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "referer": "http://localhost:8080/hello?name=Russ",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "en-US,en;q=0.9",
+    "cookie": "session-token=20560280312699453"
+  },
+  "query": { "name": "Russ" },
+  "path": "/hello",
+  "body": { "message": "Bonjour" }
+}
+```
